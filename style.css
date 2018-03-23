@@ -1,0 +1,508 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 50px 50px 0px 50px;
+    background-color: #c8cfdc;
+}
+.mobileMenu {
+    position: fixed;
+    top: 0px;
+    left: -200px;
+    background-color: #fff;
+    height: 100%;
+    width: 200px;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.4s;
+}
+
+.mobileMenu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 25px 150px 20px;
+}
+
+header nav {
+    margin-bottom: 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333
+}
+
+header nav .leftSide {
+    float: left;
+    
+}
+
+header nav .rightSide {
+    float: right;
+    line-height: 50px;
+}
+
+header nav .leftSide * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .logo {
+    margin-right: 20px;
+    height: 50px;
+    width: auto;
+}
+
+header nav .leftSide li:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+header nav .leftSide li.active {
+    color: #0089cf;
+    position: relative;
+}
+
+header nav .leftSide li.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #0089cf;
+    left: 0px;
+    bottom: -35px;
+}
+
+header nav .leftSide li {
+    position: relative;
+    cursor: pointer;
+}
+
+header nav .rightSide li {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .leftSide .dropdown {
+    min-width: 100px;
+    background-color: #0089cf;
+    color: #fff;
+    position: absolute;
+    display: none;
+}
+
+header nav .leftSide li:hover .dropdown {
+    display: block;
+}
+
+.dropdown .option {
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown .option:hover {
+    background-color: #f5f5f5;
+    color: #0089cf;
+}
+
+header nav .rightSide li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+header .icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon.cart {
+    margin-top: -4px;
+}
+
+.cartSize {
+    color: #0089cf;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    font-size: 0;
+}
+
+header .container .shoe {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 60%;
+    margin-right: 10%;
+    height: auto;
+}
+
+header .container .rightSide {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30%;
+}
+
+header .like {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 43px;
+    cursor: pointer;
+    line-height: 48px;
+    text-align: center;
+}
+
+header .like img {
+    vertical-align: middle;
+}
+
+header .container .rightSide h5 {
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 17px;
+    font-weight: 400;
+}
+
+header .container .rightSide h4 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.2;
+}
+
+header .container .rightSide .price {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+
+header .container .rightSide .colors {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666666;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header .container .rightSide .colors span {
+    color: #0089cf;
+}
+
+header .container .box {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e4e4e4;
+    background-color: #f5f5f5;
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 78px;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+header .container .box.active {
+    -webkit-filter: none;
+    filter: none; 
+}
+
+header .container .box img {
+    vertical-align: middle;
+    width: 90%;
+}
+
+header .container .size {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    border: 1px solid #e4e4e4;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1;
+    padding: 20px 80px 20px 20px;
+    border-radius: 0px;
+    background-color: #fff;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 105px center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+    border-radius: 0px;
+    padding: 21px 30px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.feat1 {
+    background-image: url(images/feat1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    padding: 260px 0px 260px 50px;
+}
+
+.feat1 h5 {
+    font-size: 25px;
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.feat1 p {
+    font-size: 14px;
+    line-height: 25px;
+    width: 90%;
+    max-width: 420px;
+}
+
+.feat2 {
+    font-size: 0px;
+    padding: 90px 50px 50px 50px;
+    background-color: #f5f5f5;
+}
+
+.feat2 * {
+    font-size: 14px;
+}
+
+.feat2 .third {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feat2 .third.one {
+    width: 30%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.feat2 .third.two {
+    width: 40%;
+}
+
+.feat2 .third.three {
+    width: 30%;
+    background-color: #fff;
+    border: 4px solid #e4e4e4;
+    box-sizing: border-box;
+    padding: 20px 10px 25px 20px;
+}
+
+.third.one .story {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.third.one h2 {
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.third.one p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.third.one .benefits {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.third.one h5 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.third.one h4 {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.third.three h3 {
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.third.three h4 {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.third.three .colors {
+    font-size: 14px;
+    color: #0089cf;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.third.three .shoe {
+    margin-bottom: 50px;
+}
+
+.third.three .leftPrice {
+    float: left;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.third.three .rightPrice {
+    float: right;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gallery {
+    width: 100%;
+    height: 280px;
+    background-image: url(images/gallery.jpg);
+    animation: slider 10s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -1207px 0px;
+    }
+}
+
+
+.sandwich {
+    display: none;
+    vertical-align: middle;
+    height: 32px;
+    width: auto;
+}
+
+@media (max-width: 1200px) {
+    header nav .rightSide li {
+        display: none;
+    }
+    .sandwich {
+        display: block;
+    } 
+    
+    header .container .shoe {
+        width: 50%;
+        margin-right: 10%;
+    }
+    header .container .rightSide {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .feat2 .third.two {
+        display: none;
+    }
+    .feat2 .third.one,
+    .feat2 .third.three {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 950px) {
+    header nav .leftSide ul {
+        display: none;
+    }
+    header .container .rightSide,
+    header .container .shoe {
+        display: block;
+        width: 100%;
+    }
+    header .container .shoe {
+        margin-bottom: 30px;
+    }
+    header {
+        padding-bottom: 70px;
+    }
+    header .container .rightSide {
+        text-align: center;
+    }
+    header .like {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+    body {
+        padding: 0;
+    }
+    .feat1 {
+        padding: 160px 0px 160px 50px;
+    }
+    .feat2 .third.one,
+    .feat2 .third.three {
+        display: block;
+        width: 100%;
+    }
+    .feat2 {
+        padding: 50px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
